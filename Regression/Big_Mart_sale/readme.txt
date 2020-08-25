@@ -1,7 +1,6 @@
 
-# Index Page
 
-![](image/Screenshot (42).png)
+![](Supervised-ML/Regression/Big_Mart_sale/image/1.png)
 
 
 
