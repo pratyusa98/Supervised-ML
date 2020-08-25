@@ -1,6 +1,6 @@
 
 
-![](Supervised-ML/Regression/Big_Mart_sale/image/1.png)
+!["My image"](image/1.png)
 
 
 
