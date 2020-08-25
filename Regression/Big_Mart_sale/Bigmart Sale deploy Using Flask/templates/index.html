@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Item_Outlet_Sales</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <center><h1>Item_Outlet_Sales</h1></center>
+        <div class="container-fluid" style="width: 50%;height: 100%">
+            
+            <form  action="{{ url_for('predict') }}" method="POST" style="margin-bottom: 20px;">
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">item_weight</label>
+                    <input type="form-input" type="text" name="Item_Weight" class="form-control" id="exampleFormControlInput1" placeholder="item_weight" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">item_fat_content</label>
+                    <select class="form-control" id="exampleFormControlSelect1"  type="text" name="Item_Fat_Content">
+                        <option>Low Fat</option>
+                        <option>Regular</option>
+                        <option>Non-Edible</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Item_Visibility</label>
+                    <input type="form-input" type="text" name="Item_Visibility" class="form-control" id="exampleFormControlInput1" placeholder="Item_Visibility" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Item_MRP</label>
+                    <input type="form-input" type="text" name="Item_MRP" class="form-control" id="exampleFormControlInput1" placeholder="Item_MRP" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Outlet_Establishment_Year</label>
+                    <input type="form-input" type="text" name="Outlet_Establishment_Year" class="form-control" id="exampleFormControlInput1" placeholder="Outlet_Establishment_Year" required>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Outlet Size</label>
+                    <select class="form-control" id="exampleFormControlSelect1"  type="text" name="Outlet_Size">
+                        <option>Medium</option>
+                        <option>Small</option>
+                        <option>High</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Outlet_Location_Type</label>
+                    <input type="form-input" type="text" name="Outlet_Location_Type" class="form-control" id="exampleFormControlInput1" placeholder="Outlet_Location_Type 3:Tier3 2:Tier2 1:Tier1" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="exampleFormControlSelect1">Outlet Type</label>
+                    <select class="form-control" id="exampleFormControlSelect1"  type="text" name="Outlet_Type">
+                        <option>Supermarket Type1</option>
+                        <option>Grocery Store</option>
+                        <option>Supermarket Type3</option>
+                        <option>Supermarket Type2</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="exampleFormControlInput1">Item_Type_Combined</label>
+                    <input type="form-input" type="text" name="Item_Type_Combined"  class="form-control" id="exampleFormControlInput1" placeholder="Item_Type_Combined 3:food 2:non-consumable 1:drinks" required>
+                </div>
+                <center><input type="submit" class="btn btn-success p-2" value="Predict"></center>
+                
+            </form>
+        </div>
+    </body>
+</html>
