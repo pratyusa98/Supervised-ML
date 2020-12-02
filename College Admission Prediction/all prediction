@@ -1,0 +1,6 @@
+                                     RMSE Value                   Score
+                                     
+ LinearRegression()                 0.06342548996467587         0.72630584498519
+ DecisionTreeRegressor()            0.005288548950326546        0.5096964212349682
+ RandomForestRegressor()            0.02687490227325277         0.6342930274582341
+  SVR()                             0.08371172458812005         0.5348255174401672
